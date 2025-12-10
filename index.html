@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلتي نحو النجاح ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #f093fb;
+            --gold: #ffd700;
+            --success: #00c853;
+            --bg-dark: #0f0c29;
+            --bg-mid: #302b63;
+            --bg-light: #24243e;
+            --text-light: #ffffff;
+            --text-muted: #b8b8d1;
+            --glass: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-mid) 50%, var(--bg-light) 100%);
+            min-height: 100vh;
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-animation span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            animation: move 25s infinite;
+            bottom: -150px;
+            border-radius: 50%;
+        }
+
+        .bg-animation span:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+        .bg-animation span:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+        .bg-animation span:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; }
+        .bg-animation span:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+        .bg-animation span:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; }
+        .bg-animation span:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+        .bg-animation span:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+        .bg-animation span:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+        .bg-animation span:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+        .bg-animation span:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+
+        @keyframes move {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gold), var(--accent), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            text-shadow: 0 0 60px rgba(102, 126, 234, 0.5);
+        }
+
+        .header .date {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        /* Affirmation Box */
+        .affirmation-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+            border: 2px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: pulse 3s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .affirmation-box::before {
+            content: '✨';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2rem;
+            animation: sparkle 2s infinite;
+        }
+
+        .affirmation-box::after {
+            content: '🌟';
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 2rem;
+            animation: sparkle 2s infinite 0.5s;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(240, 147, 251, 0.4); }
+        }
+
+        .affirmation-box h2 {
+            font-family: 'Amiri', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .affirmation-text {
+            font-size: 1.3rem;
+            line-height: 2;
+            color: var(--text-light);
+        }
+
+        /* Quote Box */
+        .quote-box {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .quote-box .quote {
+            font-family: 'Amiri', serif;
+            font-size: 1.4rem;
+            color: var(--accent);
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .quote-box .author {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Duas Section */
+        .dua-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .dua-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(102, 126, 234, 0.15));
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .dua-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.2);
+            border-color: var(--gold);
+        }
+
+        .dua-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--accent), var(--gold));
+        }
+
+        .dua-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .dua-text {
+            font-family: 'Amiri', serif;
+            font-size: 1.4rem;
+            line-height: 2.2;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .dua-source {
+            font-size: 0.85rem;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+
+        /* Progress Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        /* Section Title */
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px 0 20px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .section-title .icon {
+            font-size: 2rem;
+        }
+
+        /* Task Categories */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 20px 0;
+        }
+
+        .category-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .category-header .emoji {
+            font-size: 2rem;
+        }
+
+        .category-header h3 {
+            font-size: 1.3rem;
+            color: var(--text-light);
+        }
+
+        /* Tasks */
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .task-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-5px);
+        }
+
+        .task-item.completed {
+            background: rgba(0, 200, 83, 0.15);
+            border: 1px solid rgba(0, 200, 83, 0.3);
+        }
+
+        .task-item.completed .task-text {
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
+        .checkbox {
+            width: 28px;
+            height: 28px;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .task-item.completed .checkbox {
+            background: var(--success);
+            border-color: var(--success);
+        }
+
+        .checkbox::after {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.3s ease;
+        }
+
+        .task-item.completed .checkbox::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .task-text {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .task-badge {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        /* Weekly Progress */
+        .weekly-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .day-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 15px 10px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .day-card.today {
+            border-color: var(--gold);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .day-card.completed-day {
+            background: rgba(0, 200, 83, 0.2);
+            border-color: var(--success);
+        }
+
+        .day-name {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .day-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .day-progress {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: var(--accent);
+        }
+
+        /* Monthly Calendar */
+        .monthly-calendar {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            margin: 20px 0;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-nav {
+            background: var(--primary);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .calendar-nav:hover {
+            background: var(--secondary);
+            transform: scale(1.05);
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-day-header {
+            text-align: center;
+            padding: 10px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        .calendar-day:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .calendar-day.today {
+            border: 2px solid var(--gold);
+        }
+
+        .calendar-day.has-progress::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            width: 6px;
+            height: 6px;
+            background: var(--success);
+            border-radius: 50%;
+        }
+
+        .calendar-day.full-progress {
+            background: rgba(0, 200, 83, 0.3);
+        }
+
+        /* Reset Button */
+        .reset-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+        }
+
+        .reset-btn {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-family: 'Tajawal', sans-serif;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+
+        .reset-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.4);
+        }
+
+        .new-month-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        .new-month-btn:hover {
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+        }
+
+        .footer .dua {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        /* Celebration Modal */
+        .celebration-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .celebration-overlay.show {
+            display: flex;
+        }
+
+        .celebration-content {
+            background: linear-gradient(135deg, var(--bg-mid), var(--bg-light));
+            border: 2px solid var(--gold);
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            animation: celebrationPop 0.5s ease;
+        }
+
+        @keyframes celebrationPop {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .celebration-content h2 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .celebration-content p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .celebration-close {
+            background: var(--gold);
+            border: none;
+            color: var(--bg-dark);
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .categories-grid { grid-template-columns: 1fr; }
+            .weekly-grid { grid-template-columns: repeat(7, 1fr); gap: 5px; }
+            .day-card { padding: 10px 5px; }
+            .day-name { font-size: 0.7rem; }
+            .day-number { font-size: 1rem; }
+            .affirmation-text { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🚀 رحلتي نحو النجاح 🚀</h1>
+            <div class="date" id="currentDate"></div>
+        </header>
+
+        <!-- Daily Affirmation -->
+        <div class="affirmation-box">
+            <h2>💫 توكيداتي اليومية 💫</h2>
+            <div class="affirmation-text" id="affirmationText"></div>
+        </div>
+
+        <!-- Daily Duas -->
+        <div class="dua-section">
+            <div class="dua-card">
+                <div class="dua-icon">🤲</div>
+                <div class="dua-text">رَبِّ اشْرَحْ لِي صَدْرِي ❁ وَيَسِّرْ لِي أَمْرِي ❁ وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي ❁ يَفْقَهُوا قَوْلِي</div>
+                <div class="dua-source">سورة طه (25-28)</div>
+            </div>
+            <div class="dua-card">
+                <div class="dua-icon">✨</div>
+                <div class="dua-text">اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلًا</div>
+                <div class="dua-source">صحيح ابن حبان</div>
+            </div>
+        </div>
+
+        <!-- Motivational Quote -->
+        <div class="quote-box">
+            <div class="quote" id="quoteText"></div>
+            <div class="author" id="quoteAuthor"></div>
+        </div>
+
+        <!-- Progress Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number" id="todayProgress">0%</div>
+                <div class="label">إنجاز اليوم</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="weekProgress">0%</div>
+                <div class="label">إنجاز الأسبوع</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="monthProgress">0%</div>
+                <div class="label">إنجاز الشهر</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="streakDays">0</div>
+                <div class="label">أيام متتالية 🔥</div>
+            </div>
+        </div>
+
+        <!-- Study Section -->
+        <h2 class="section-title"><span class="icon">📚</span> الدراسة والتطوير</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="emoji">💻</span>
+                    <h3>الدراسة التقنية</h3>
+                </div>
+                <div class="task-item" data-task="tech-study" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text" id="techTaskText">جاري التحميل...</span>
+                    <span class="task-badge" id="techTaskBadge">اليوم</span>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="emoji">🌍</span>
+                    <h3>تطوير المهارات</h3>
+                </div>
+                <div class="task-item" data-task="exercise" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text">رياضة 10 دقائق</span>
+                    <span class="task-badge">يومياً</span>
+                </div>
+                <div class="task-item" data-task="english" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text">تعلم الإنجليزية 10 دقائق</span>
+                    <span class="task-badge">يومياً</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spiritual Section -->
+        <h2 class="section-title"><span class="icon">🕌</span> العبادات والأذكار</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="emoji">🤲</span>
+                    <h3>الصلاة والقرآن</h3>
+                </div>
+                <div class="task-item" data-task="prayer" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text">الصلاة على وقتها</span>
+                    <span class="task-badge">5 صلوات</span>
+                </div>
+                <div class="task-item" data-task="yasin" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text">قراءة سورة يس</span>
+                    <span class="task-badge">يومياً</span>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="emoji">📿</span>
+                    <h3>الأذكار</h3>
+                </div>
+                <div class="task-item" data-task="istighfar" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text">أستغفر الله العظيم وأتوب إليه</span>
+                    <span class="task-badge">500 مرة</span>
+                </div>
+                <div class="task-item" data-task="tasbih" onclick="toggleTask(this)">
+                    <div class="checkbox"></div>
+                    <span class="task-text">سبحان الله وبحمده سبحان الله العظيم</span>
+                    <span class="task-badge">500 مرة</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Progress -->
+        <h2 class="section-title"><span class="icon">📅</span> تقدم الأسبوع</h2>
+        <div class="weekly-grid" id="weeklyGrid"></div>
+
+        <!-- Monthly Calendar -->
+        <h2 class="section-title"><span class="icon">🗓️</span> التقويم الشهري</h2>
+        <div class="monthly-calendar">
+            <div class="calendar-header">
+                <button class="calendar-nav" onclick="changeMonth(-1)">‹</button>
+                <h3 id="monthTitle"></h3>
+                <button class="calendar-nav" onclick="changeMonth(1)">›</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+
+        <!-- Reset Section -->
+        <div class="reset-section">
+            <h3 style="margin-bottom: 20px; font-size: 1.3rem;">🔄 إدارة التقدم</h3>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">كل شهر فرصة جديدة للإنجاز!</p>
+            <button class="reset-btn" onclick="resetToday()">إعادة تعيين اليوم</button>
+            <button class="reset-btn new-month-btn" onclick="startNewMonth()">بداية شهر جديد 🌙</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="dua">اللهم وفقني لما تحب وترضى</div>
+            <p>💪 أنتِ قادرة على تحقيق كل أحلامك</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">صُمم بحب لرحلتك نحو النجاح ✨</p>
+        </footer>
+    </div>
+
+    <!-- Celebration Modal -->
+    <div class="celebration-overlay" id="celebrationModal">
+        <div class="celebration-content">
+            <h2>🎉 مبروووك! 🎉</h2>
+            <p id="celebrationMessage">أنجزتِ كل مهام اليوم!</p>
+            <button class="celebration-close" onclick="closeCelebration()">الحمد لله ✨</button>
+        </div>
+    </div>
+
+    <script>
+        // Affirmations
+        const affirmations = [
+            "أنا على وشك الحصول على وظيفة أحلامي! 🌟\nوظيفة سهلة وممتعة من البيت براتب عالي\nخلال الأشهر الثلاثة القادمة سأحقق هذا الحلم!",
+            "الكون يتآمر لصالحي! 💫\nالفرص تأتيني من كل مكان\nأنا مستعدة لاستقبال وظيفتي المثالية من المنزل",
+            "أنا مبرمجة ناجحة وخبيرة AWS! 💻\nمهاراتي تتطور كل يوم\nالشركات تبحث عن شخص مثلي بالضبط",
+            "طاقتي إيجابية وتجذب النجاح! ✨\nأنا محاطة بالبركة والتوفيق\nراتبي العالي في طريقه إلي",
+            "أنا أم رائعة وامرأة ناجحة! 👑\nأوازن بين مسؤولياتي بسهولة\nوظيفة أحلامي ستكون مرنة ومناسبة لحياتي",
+            "كل يوم أقترب أكثر من هدفي! 🎯\nالعمل من المنزل براتب ممتاز ينتظرني\nأنا أستحق الأفضل وسأحصل عليه",
+            "أنا قوية ومثابرة! 💪\nدراستي للبرمجة وAWS ستفتح لي أبواب الرزق\nالنجاح حليفي والتوفيق رفيقي"
+        ];
+
+        // Motivational Quotes
+        const quotes = [
+            { text: "النجاح ليس نهاية الطريق، والفشل ليس قاتلاً، إنما الشجاعة للاستمرار هي ما يهم", author: "ونستون تشرشل" },
+            { text: "لا تخف من السير ببطء، خف فقط من الوقوف", author: "حكمة صينية" },
+            { text: "كل إنجاز عظيم كان في البداية حلماً مستحيلاً", author: "والت ديزني" },
+            { text: "الصبر مفتاح الفرج", author: "حكمة عربية" },
+            { text: "من جد وجد ومن زرع حصد", author: "مثل عربي" },
+            { text: "اجعل من العقبات سلالم للنجاح", author: "حكمة" },
+            { text: "الاستمرارية تغلب الموهبة، ابقِ ثابتة على طريقك", author: "Stay Consistent 💪" },
+            { text: "إن الله لا يضيع أجر من أحسن عملاً", author: "القرآن الكريم" },
+            { text: "الحلم لا يصبح حقيقة بالسحر، إنه يحتاج للعرق والتصميم والعمل الجاد", author: "كولن باول" },
+            { text: "كل صباح جديد يحمل معه فرصة جديدة", author: "حكمة" },
+            { text: "ثق بالله ثم بنفسك، فأنتِ أقوى مما تتخيلين", author: "حكمة" },
+            { text: "الاستمرارية تصنع المعجزات", author: "حكمة يابانية" }
+        ];
+
+        // Arabic months
+        const arabicMonths = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 
+                             'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+        const arabicDays = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+        const shortDays = ['أحد', 'إثن', 'ثلا', 'أرب', 'خمي', 'جمع', 'سبت'];
+
+        let currentMonth = new Date().getMonth();
+        let currentYear = new Date().getFullYear();
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            updateDate();
+            updateTechTask();
+            updateAffirmation();
+            updateQuote();
+            renderWeeklyGrid();
+            renderCalendar();
+            updateAllProgress();
+        });
+
+        // Set tech task based on odd/even day
+        function updateTechTask() {
+            const today = new Date();
+            const dayOfMonth = today.getDate();
+            const isOddDay = dayOfMonth % 2 === 1;
+            
+            const taskText = document.getElementById('techTaskText');
+            const taskBadge = document.getElementById('techTaskBadge');
+            
+            if (isOddDay) {
+                taskText.textContent = 'دراسة البرمجة مع محمد أبو هدهود';
+                taskBadge.textContent = '💻 يوم البرمجة';
+            } else {
+                taskText.textContent = 'دراسة AWS Cloud';
+                taskBadge.textContent = '☁️ يوم الكلاود';
+            }
+        }
+
+        // Get today's date key
+        function getTodayKey() {
+            const today = new Date();
+            return `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+        }
+
+        // Get current month key
+        function getMonthKey() {
+            const today = new Date();
+            return `${today.getFullYear()}-${today.getMonth() + 1}`;
+        }
+
+        // Load saved data
+        function loadData() {
+            const todayKey = getTodayKey();
+            const savedData = JSON.parse(localStorage.getItem('trackerData') || '{}');
+            
+            // Load tasks
+            const todayTasks = savedData[todayKey]?.tasks || {};
+            document.querySelectorAll('.task-item').forEach(item => {
+                const taskId = item.dataset.task;
+                if (todayTasks[taskId]) {
+                    item.classList.add('completed');
+                }
+            });
+        }
+
+        // Save data
+        function saveData() {
+            const todayKey = getTodayKey();
+            const savedData = JSON.parse(localStorage.getItem('trackerData') || '{}');
+            
+            // Save tasks
+            const tasks = {};
+            document.querySelectorAll('.task-item').forEach(item => {
+                tasks[item.dataset.task] = item.classList.contains('completed');
+            });
+
+            savedData[todayKey] = { tasks };
+            localStorage.setItem('trackerData', JSON.stringify(savedData));
+            
+            updateAllProgress();
+        }
+
+        // Toggle task completion
+        function toggleTask(element) {
+            element.classList.toggle('completed');
+            saveData();
+            checkDayCompletion();
+        }
+
+        // Update date display
+        function updateDate() {
+            const today = new Date();
+            const dayName = arabicDays[today.getDay()];
+            const day = today.getDate();
+            const month = arabicMonths[today.getMonth()];
+            const year = today.getFullYear();
+            document.getElementById('currentDate').textContent = `${dayName}، ${day} ${month} ${year}`;
+        }
+
+        // Update affirmation
+        function updateAffirmation() {
+            const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+            const index = dayOfYear % affirmations.length;
+            document.getElementById('affirmationText').innerHTML = affirmations[index].replace(/\n/g, '<br>');
+        }
+
+        // Update quote
+        function updateQuote() {
+            const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+            const index = dayOfYear % quotes.length;
+            document.getElementById('quoteText').textContent = `"${quotes[index].text}"`;
+            document.getElementById('quoteAuthor').textContent = `— ${quotes[index].author}`;
+        }
+
+        // Calculate progress
+        function calculateDayProgress(dateKey) {
+            const savedData = JSON.parse(localStorage.getItem('trackerData') || '{}');
+            const dayData = savedData[dateKey];
+            if (!dayData) return 0;
+
+            let completed = 0;
+            let total = 7; // 7 tasks total
+
+            // Tasks
+            const tasks = dayData.tasks || {};
+            Object.values(tasks).forEach(v => { if (v) completed++; });
+
+            return Math.round((completed / total) * 100);
+        }
+
+        // Update all progress displays
+        function updateAllProgress() {
+            // Today
+            const todayProgress = calculateDayProgress(getTodayKey());
+            document.getElementById('todayProgress').textContent = todayProgress + '%';
+
+            // Week
+            const weekProgress = calculateWeekProgress();
+            document.getElementById('weekProgress').textContent = weekProgress + '%';
+
+            // Month
+            const monthProgress = calculateMonthProgress();
+            document.getElementById('monthProgress').textContent = monthProgress + '%';
+
+            // Streak
+            const streak = calculateStreak();
+            document.getElementById('streakDays').textContent = streak;
+
+            renderWeeklyGrid();
+            renderCalendar();
+        }
+
+        function calculateWeekProgress() {
+            const today = new Date();
+            const dayOfWeek = today.getDay();
+            let total = 0;
+            let count = 0;
+
+            for (let i = 0; i <= dayOfWeek; i++) {
+                const date = new Date(today);
+                date.setDate(today.getDate() - (dayOfWeek - i));
+                const key = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+                total += calculateDayProgress(key);
+                count++;
+            }
+
+            return count > 0 ? Math.round(total / count) : 0;
+        }
+
+        function calculateMonthProgress() {
+            const today = new Date();
+            const daysInMonth = today.getDate();
+            let total = 0;
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                const key = `${today.getFullYear()}-${today.getMonth() + 1}-${i}`;
+                total += calculateDayProgress(key);
+            }
+
+            return Math.round(total / daysInMonth);
+        }
+
+        function calculateStreak() {
+            const today = new Date();
+            let streak = 0;
+            let currentDate = new Date(today);
+
+            while (true) {
+                const key = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
+                const progress = calculateDayProgress(key);
+                
+                if (progress >= 70) {
+                    streak++;
+                    currentDate.setDate(currentDate.getDate() - 1);
+                } else {
+                    break;
+                }
+
+                if (streak > 365) break; // Safety limit
+            }
+
+            return streak;
+        }
+
+        // Render weekly grid
+        function renderWeeklyGrid() {
+            const grid = document.getElementById('weeklyGrid');
+            const today = new Date();
+            const dayOfWeek = today.getDay();
+            
+            let html = '';
+            for (let i = 0; i < 7; i++) {
+                const date = new Date(today);
+                date.setDate(today.getDate() - dayOfWeek + i);
+                const key = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+                const progress = calculateDayProgress(key);
+                const isToday = i === dayOfWeek;
+                const isCompleted = progress >= 70;
+
+                html += `
+                    <div class="day-card ${isToday ? 'today' : ''} ${isCompleted ? 'completed-day' : ''}">
+                        <div class="day-name">${shortDays[i]}</div>
+                        <div class="day-number">${date.getDate()}</div>
+                        <div class="day-progress">${progress}%</div>
+                    </div>
+                `;
+            }
+            grid.innerHTML = html;
+        }
+
+        // Render calendar
+        function renderCalendar() {
+            const grid = document.getElementById('calendarGrid');
+            const title = document.getElementById('monthTitle');
+            
+            title.textContent = `${arabicMonths[currentMonth]} ${currentYear}`;
+
+            const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+            const today = new Date();
+
+            let html = shortDays.map(d => `<div class="calendar-day-header">${d}</div>`).join('');
+
+            // Empty cells before first day
+            for (let i = 0; i < firstDay; i++) {
+                html += '<div class="calendar-day"></div>';
+            }
+
+            // Days
+            for (let day = 1; day <= daysInMonth; day++) {
+                const key = `${currentYear}-${currentMonth + 1}-${day}`;
+                const progress = calculateDayProgress(key);
+                const isToday = today.getDate() === day && 
+                               today.getMonth() === currentMonth && 
+                               today.getFullYear() === currentYear;
+                
+                let classes = 'calendar-day';
+                if (isToday) classes += ' today';
+                if (progress > 0) classes += ' has-progress';
+                if (progress >= 70) classes += ' full-progress';
+
+                html += `<div class="${classes}" title="${progress}% مكتمل">${day}</div>`;
+            }
+
+            grid.innerHTML = html;
+        }
+
+        function changeMonth(delta) {
+            currentMonth += delta;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            } else if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            renderCalendar();
+        }
+
+        // Check day completion
+        function checkDayCompletion() {
+            const progress = calculateDayProgress(getTodayKey());
+            if (progress === 100) {
+                showCelebration('🎉 ما شاء الله! 🎉', 'أنجزتِ كل مهام اليوم!\nاستمري على هذا التألق!');
+            }
+        }
+
+        function showCelebration(title, message) {
+            document.querySelector('.celebration-content h2').textContent = title;
+            document.getElementById('celebrationMessage').innerHTML = message.replace(/\n/g, '<br>');
+            document.getElementById('celebrationModal').classList.add('show');
+        }
+
+        function closeCelebration() {
+            document.getElementById('celebrationModal').classList.remove('show');
+        }
+
+        // Reset functions
+        function resetToday() {
+            if (confirm('هل تريدين إعادة تعيين تقدم اليوم؟')) {
+                const todayKey = getTodayKey();
+                const savedData = JSON.parse(localStorage.getItem('trackerData') || '{}');
+                delete savedData[todayKey];
+                localStorage.setItem('trackerData', JSON.stringify(savedData));
+                
+                document.querySelectorAll('.task-item').forEach(item => {
+                    item.classList.remove('completed');
+                });
+                
+                updateAllProgress();
+            }
+        }
+
+        function startNewMonth() {
+            if (confirm('هل تريدين البدء بشهر جديد؟\nسيتم حفظ سجل الشهر السابق وإعادة البدء من جديد.')) {
+                const savedData = JSON.parse(localStorage.getItem('trackerData') || '{}');
+                const monthKey = getMonthKey();
+                
+                // Archive current month
+                const archives = JSON.parse(localStorage.getItem('trackerArchives') || '{}');
+                archives[monthKey] = savedData;
+                localStorage.setItem('trackerArchives', JSON.stringify(archives));
+                
+                // Clear current data
+                localStorage.setItem('trackerData', '{}');
+                
+                // Reset UI
+                document.querySelectorAll('.task-item').forEach(item => {
+                    item.classList.remove('completed');
+                });
+                
+                updateAllProgress();
+                showCelebration('🌙 شهر جديد مبارك! 🌙', 'بداية جديدة مليئة بالأمل والإنجازات!\nإلى الأمام دائماً!');
+            }
+        }
+    </script>
+</body>
+</html>
